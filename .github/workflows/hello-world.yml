@@ -1,0 +1,11 @@
+name: hello-world 
+on:
+  push:
+    branches: [ "aprendiendo-github-actions" ]
+jobs:
+  hola-mundo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello-world
+        run: python main.py
+
